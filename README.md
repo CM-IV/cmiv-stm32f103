@@ -1,17 +1,8 @@
----
-draft: false
-title: "From Design to Debug: Building My Custom STM32F103 PCB"
-snippet: "Walkthrough of designing, assembling, and validating a custom STM32F103 board using KiCAD"
-image:
-  src: "https://i.postimg.cc/vB7kvs6J/cmiv-stm32f103c8.png"
-  alt: "STM32F103 PCB with STLink V2 and multimeter probe"
-publishDate: "2025-05-07"
-category: "Tutorials"
-authors: ["CM-IV"]
-tags: [STM32, KiCAD, PCBDesign, EmbeddedSystems, Debugging]
----
+# From Design to Debug: Building My Custom STM32F103 PCB
 
-## Introduction
+![](https://i.postimg.cc/vB7kvs6J/cmiv-stm32f103c8.png)
+
+### Introduction
 A few months ago, my entire embedded systems experience boiled down to collecting temperature and accelerometer data on an ESP32-C3 dev board using Rust. Coming from a computer science background, I’d written my fair share of JavaScript and C++ code, but hardware always felt like a black box—until I decided to pry it open. Rust’s strict compiler and fearless concurrency made embedded development less intimidating for me; no more worrying about whether my pointers were corrupting memory or if my ISRs would deadlock. But writing firmware for a pre-built dev board only showed me half the picture.
 
 I wanted to understand the why behind the hardware: why I²C demands pull-ups and why my carefully written Rust code would fail if the PCB layout was wrong. So I designed my own 2-layer STM32F103 breakout board in KiCAD 9 (on GNU/Linux, of course), with pinouts for SWD, UART, I²C, and GPIO. It was a crash course in humility. I learned the hard way that LCSC’s inventory doesn’t care about my schematic’s optimism—footprint reviews and BOM checks aren’t just best practices. They’re the difference between a working board and a soldering session.
