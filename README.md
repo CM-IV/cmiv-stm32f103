@@ -1,6 +1,7 @@
 ## Introduction
 
 ![Finished Project Image](https://i.postimg.cc/9fSZHSzT/IMG-20250907-145521.jpg)
+[*Project Link*](https://github.com/CM-IV/cmiv-stm32f103-rs)
 
 A few months ago, my embedded systems experience was limited to collecting temperature and accelerometer data on an ESP32-C3 dev board using Rust. Coming from a computer science background, I had written plenty of C++ code and JavaScript in my first jobs out of college, but aside from school studies I didn't know much about the hardware side of things. I noticed the ESP32-C3-DevKit-RUST-1 dev board and decided try it out, but working with pre-built development boards only showed me half the picture.
 
